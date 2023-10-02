@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cs523.group27.CryptoAnalysis</groupId>
+  <artifactId>CryptoAnalysis</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+    <properties>
+      <maven.compiler.target>1.8</maven.compiler.target>
+      <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.13</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-sql_2.13</artifactId>
+    <version>3.5.0</version>
+    <scope>provided</scope>
+</dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_2.13</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming-kafka-0-10_2.13</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.apache.hadoop</groupId>
+        	<artifactId>hadoop-client</artifactId>
+        	<version>2.7.7</version>
+        </dependency>
+        <dependency>
+		    <groupId>org.apache.hbase</groupId>
+		    <artifactId>hbase-client</artifactId>
+		    <version>1.2.12</version>
+		</dependency>
+	</dependencies>
+    
+<pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    
+  </project>
